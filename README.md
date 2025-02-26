@@ -1,6 +1,6 @@
 # Batch-PoSO Pseudocode: Prover and Verifier
 
-Implementation in C (and PARI/GP for the 3square decomposition) of Batch-PoSO (see spec_squad.pdf used a reference) from https://eprint.iacr.org/2022/1153.pdf (CCS 2022). This implementation uses OpenSSL for portability and generic purpose (more diversity on the usable curves for instance). The paper timing were done by adapting an old version of bitcoin-core [secp256k1](https://github.com/bitcoin-core/secp256k1) and is not part of the scope of this repository.
+Implementation in C (and PARI/GP for the 3square decomposition) of Batch-PoSO from https://eprint.iacr.org/2022/1153.pdf (CCS 2022). This implementation uses OpenSSL for portability and generic purpose (more diversity on the usable curves for instance). The paper timing were done by adapting an old version of bitcoin-core [secp256k1](https://github.com/bitcoin-core/secp256k1) and is not part of the scope of this repository.
 
 The code was tested on a 2,3 GHz Intel Core i7 MacBook Pro.
 
