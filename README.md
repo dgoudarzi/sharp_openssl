@@ -38,7 +38,7 @@ Total time taken by CPU for VERIF: 0.003228s
 
 ## Notes
 
-_OpenSSL_: We used OpenSSL to perform the arithmetic operations for portability and simplicity in order to produce a reference implementation loyal to the specifications. This allowed also to do tests on order curves by simply changing the NID in the main. In order to achieve the best performance, one can make used of libraries such as bitcoin-core', which implements seckp256k1 operations with higly optimized code (https://github.com/bitcoin-core/secp256k1).
+_OpenSSL_: We used OpenSSL to perform the arithmetic operations for portability and simplicity in order to produce a reference implementation loyal to the specifications. This allowed also to do tests on other curves by simply changing the NID in the main. In order to achieve the best performance, one can make used of libraries such as bitcoin-core', which implements seckp256k1 operations with higly optimized code (https://github.com/bitcoin-core/secp256k1).
 
 _Clean Up_: Due to the nature of this implementation being a reference implementation, numerous variables are instantiated and then cleaned/freed, which makes the clean up a bit tedious/ugly. The number of variables used, and their cleaning could be easily reduced and made compact for further implementations.
 
